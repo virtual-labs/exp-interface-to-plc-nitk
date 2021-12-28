@@ -2,38 +2,395 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "The advantage of using PLC is ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Accuracy and quality can be improved",
+        "b": "Productivity can be improved",
+        "c": "Makes it easy to work in difficult or hazardous environment",
+        "d": "All of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "d",
+      "difficulty": ""
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "In the figure shown below, recognize the following part <br><img src=\"images/1.gif\"\ height=\"300\" width=\"450\" />",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "1= Input section,<br> 2 = Output section,<br>3 = Sensing section,<br>4 = Field hardware devices",
+        "b": "1= Input section,<br>2 = Sensing section,<br>3 = Output section,<br>4 = Field hardware devices",
+        "c": "1 = Sensing section,<br>2 = Output section,<br>3 = Field hardware devices,<br>4 = Input section",
+        "d": "1 = Sensing section,<br>2 = Input section,<br>3 = Field hardware devices,<br>4 = Output section"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "In the sensing section of PLC, it has limit switches, photoelectric sensors, push button etc. These hardware devices are called as",
+      "answers": {
+        "a": "Field input devices",
+        "b": "Field input and output devices",
+        "c": "Field output devices",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "The Function of the input section in PLC, is to",
+      "answers": {
+        "a": "Connect and isolate, low voltage input level to high-voltage signal",
+        "b": "Connect and isolate, high voltage input level from field device to low-voltage signals",
+        "c": "Both Connect and isolate, low voltage input level to high-voltage signal and Connect and isolate, high voltage input level from field device to low-voltage signals",
+        "d": "Neither Connect and isolate, low voltage input level to high-voltage signal and Connect and isolate, high voltage input level from field device to low-voltage signals"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "Programmer (device used by the programme or operator to enter or edit program instruction or data) is a",
+      "answers": {
+        "a": "Handheld programmer",
+        "b": "Personal computer",
+        "c": "Industrial computer programming terminal",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "When the PLC is running and following the programmer’s instructions, it is called as ",
+      "answers": {
+        "a": "Solving the computer problem",
+        "b": "Fixing the bug",
+        "c": "Solving the user program",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
+      "difficulty": ""
+    },
+    {
+      "question": "Fixed PLC is also called as",
+      "answers": {
+        "a": "A modular PLC",
+        "b": "Motion PLC",
+        "c": "Packaged controller",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "The list of instructions given by the programmer is placed in PLC memory in ascending order. This list of instructions is called as",
+      "answers": {
+        "a": "User ladder program",
+        "b": "Instructions to field hardware device",
+        "c": "Instructions to hardware",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "Before downloading the user program, the processor must be in",
+      "answers": {
+        "a": "Run mode",
+        "b": "Test mode",
+        "c": "Program mode",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "In run mode, the programmer will continuously run and solve programmed instructions. This constant running of the program in a PLC is called ________ ",
+      "answers": {
+        "a": "Fixing",
+        "b": "Scanning",
+        "c": "Executing",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of a screw terminal 9 on the 16-point input module in slot 3? <br><img src=\"images/q2.gif\"\ height=\"450\" width=\"300\"/> ",
+      "answers": {
+        "a": "I: 3.0/9",
+        "b": "I: 9.0/3",
+        "c": "I: 3.1/9",
+        "d": "I: 9.1/3"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of screw terminal 10 on a 16-point input module in slot 4?<br><img src=\"images/q3.gif\"\ height=\"450\" width=\"300\"/>",
+      "answers": {
+        "a": "O: 4.1/10",
+        "b": "I: 4.0/10",
+        "c": "I: 10.1/4",
+        "d": "I: 4.1/10"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of screw terminal 2 on an 8-point input module in slot 3?<br><img src=\"../images/PLC/q4.gif\"\ height=\"450\" width=\"300\" /> "",
+      "answers": {
+        "a": "I: 3.0/2",
+        "b": "I: 2.0/3",
+        "c": "I: 2.1/3",
+        "d": "I: 3.2/0"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of screw terminal 16 on a 32-point input module in slot 2? ",
+      "answers": {
+        "a": "I: 2.0/16",
+        "b": "I: 2.16/0",
+        "c": "I: 2.1/0",
+        "d": "I: 2.0/1"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of screw terminal 19 on a 32-point input module in slot 2?",
+      "answers": {
+        "a": "I: 2.0/3",
+        "b": "I: 2.1/3",
+        "c": "I: 2.0/19",
+        "d": "I: 2.1/19"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of screw terminal 31 on a 32-point input module in slot 1?",
+      "answers": {
+        "a": "I: 1.0/15",
+        "b": "I: 1.0/16",
+        "c": "I: 1.1/15",
+        "d": "I: 1.1/31"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of screw terminal 3 on an 8-point output module in slot 4?<br><img src=\"images/q5.gif\"\height=\"450\" width=\"300\" />",
+      "answers": {
+        "a": "O: 3.1/4",
+        "b": "O: 4.0/3",
+        "c": "O: 4.1/3",
+        "d": "O: 3.0/4"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of screw terminal 8 on a 16-point output module in slot 3?<br><img src=\"images/q6.gif\"\height=\"450\" width=\"300\"/>",
+      "answers": {
+        "a": "I: 3.0/3",
+        "b": "O: 3.1/8",
+        "c": "O: 3.0/8",
+        "d": "O: 3.0/7"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of screw terminal 8 on a 32-point output module in slot 4?",
+      "answers": {
+        "a": "O: 4.1/8",
+        "b": "O: 4.8/1",
+        "c": "O: 4.0/8",
+        "d": "O: 4.8/0"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of screw terminal 16 on a 32-point output module in slot 4?",
+      "answers": {
+        "a": "O: 4.0/16",
+        "b": "O: 4.1/16",
+        "c": "O: 4.0/1",
+        "d": "O: 4.1/0"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": ""
+    },
+    {
+      "question": "What is the address of screw terminal 22 on a 32-point output module in slot 4?",
+      "answers": {
+        "a": "O: 4.0/22",
+        "b": "O: 4.1/6",
+        "c": "O: 4.0/22",
+        "d": "O: 4.0/6"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": ""
+    },
+     {
+        "question": "In a fixed PLC, with 16 inputs. What is the address for the input screw terminal 6?<br><img src=\"images/q7.gif\"\ height=\"250\" width=\"500\" />",
+        "answers": {
+          "a": "I: 0/6",
+          "b": "I: 0.0/6",
+          "c": "I: 0.1/6",
+          "d": "Both a and b"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "d",
+        "difficulty": ""
+      },
+      {
+        "question": "In a fixed PLC, with 16 outputs. What is the address for the output screw terminal 7?",
+        "answers": {
+          "a": "O: 0.0/7",
+          "b": "O: 0/7",
+          "c": "O: 0.1/7",
+          "d": "Both a and b"
+        },
+        "explanations": {
+          "a": "",
+          "b": "",
+          "c": "",
+          "d": ""
+        },
+        "correctAnswer": "d",
+        "difficulty": ""
+      },
   ]
 }
