@@ -359,7 +359,7 @@
       "difficulty": ""
     },
      {
-        "question": "In a fixed PLC, with 16 inputs. What is the address for the input screw terminal 6?<br><img src='images/q7.gif' height=\"250\" width=\"500\" />",
+        "question": "In a fixed PLC, with 16 inputs. What is the address for the input screw terminal 6?<br><img src='images/q7.gif' height='250' width='500'  />",
         "answers": {
           "a": "I: 0/6",
           "b": "I: 0.0/6",
