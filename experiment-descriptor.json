@@ -4,7 +4,7 @@
   "basedir": ".",
   "units": [
     {
-     "unit-type": "aim"
+      "unit-type": "aim"
     },
     {
       "target": "theory.html",
@@ -21,15 +21,13 @@
       "unit-type": "task",
       "content-type": "text"
     },
-
     {
-        "target": "pretest.html",
-        "source": "pretest.json",
-        "label": "Self Evaluation",
-        "unit-type": "task",
-        "content-type": "assesment"
+      "target": "pretest.html",
+      "source": "pretest.json",
+      "label": "Self Evaluation",
+      "unit-type": "task",
+      "content-type": "assesment"
     },
-
     {
       "target": "simulation.html",
       "source": "simulation/index.html",
@@ -37,7 +35,6 @@
       "unit-type": "task",
       "content-type": "simulation"
     },
-
     {
       "target": "assignment.html",
       "source": "assignment.md",
@@ -45,23 +42,20 @@
       "unit-type": "task",
       "content-type": "text"
     },
-
     {
-        "target": "posttest.html",
-        "source": "posttest.json",
-        "label": "Quiz",
-        "unit-type": "task",
-        "content-type": "assesment"
+      "target": "posttest.html",
+      "source": "posttest.json",
+      "label": "Quiz",
+      "unit-type": "task",
+      "content-type": "assesment"
     },
-
     {
-        "target": "videos.html",
-        "source": "videos.md",
-        "label": "Videos",
-        "unit-type": "task",
-        "content-type": "text"
+      "target": "videos.html",
+      "source": "videos.md",
+      "label": "Videos",
+      "unit-type": "task",
+      "content-type": "text"
     },
-
     {
       "target": "references.html",
       "source": "references.md",
