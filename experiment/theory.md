@@ -30,7 +30,7 @@
 
 <li><b><u>Input section :</b></u><br>
 <p style="text-align: justify;">This section is majorly divided into 2 parts:
-<ul type=disc>
+<ul type=disc style="text-align: justify;">
 <li>First, the physical screw terminals, where incoming signal (i.e. input), from the field input devices (e.g. limit switch) are connected to the PLC.</li>
 <li>The second portion of them input section is the PLC's internal conversion electronics. This section converts and isolates the high-voltage input level from field input devices. High-voltage    signals from field input devices are converted to +5 volts direct current (VDC) for a valid ON input signal, and a 0 VDC for a valid OFF input signal. Incoming signal conversion and isolation is necessary because microprocessor components operate on +5 VDC, whereas an input signal may be of 24 VDC, 120 volts alternating current (VAC), or 220 VDC. If 120 VAC signal is inputted, for example, into 5 VDC, circuit will quickly destroy your PLC.</li>
 </ul>
@@ -57,9 +57,9 @@
 
 #### Fixed and modular PLC hardware :
 
-<p >There are two types of physical configurations, fixed and modular. In a fixed PLC, all of its components like, the input section, power supply, CPU and associated memory and output section - is built into one self - contained unit. All the input and output screw terminals are built into the PLC package and are fixed, which cannot be moved i.e. not removable. This type of PLC is also called as a packaged controller.</p>
+<p style="text-align: justify;">There are two types of physical configurations, fixed and modular. In a fixed PLC, all of its components like, the input section, power supply, CPU and associated memory and output section - is built into one self - contained unit. All the input and output screw terminals are built into the PLC package and are fixed, which cannot be moved i.e. not removable. This type of PLC is also called as a packaged controller.</p>
 
-<p style="text-align: justify;">The modular PLC comes as separate pieces. All the parts of modular PLC are purchased separately i.e. piece by piece. It’s like customizing , we may have  2  or  3  power  supplies  to  choose  from  ,  a  handful  of  different processors(CPU's) , many separate input modules , many separate output modules  and  a  selection  of  assemblies  ,  called  racks  ,  chassis  ,  or baseplates to hold the pieces together .</p>
+<p style="text-align: justify;">The modular PLC comes as separate pieces. All the parts of modular PLC are purchased separately i.e. piece by piece. It’s like customizing , we may have  2  or  3  power  supplies  to  choose  from  ,  a  handful  of  different processors(CPU's) , many separate input modules , many separate output modules  and  a  selection  of  assemblies  ,  called  racks  ,  chassis  ,  or baseplates to hold the pieces together.</p>
 
 #### How does a PLC work?
 
@@ -75,14 +75,14 @@
 <p style="text-align: justify;">The first step is to develop the user ladder program. Once the user ladder program  is  verified  for  correctness,  the  next  step  is  to  download  the program into the processor's memory. The process of transferring the user defined PLC program from personal computer's memory into PLC memory is called  as downloading the program. But before downloading the user program, the processor must be in  program mode. Now, if all the inputs and outputs signals are wired to the correct screw terminals, the processor can be put in run mode. In run mode, the program will continuously run and solve the programmed instructions. The process of solving the programmed  instruction  is  sometime  called  as  solving  the  logic.  This constant running of the program in a PLC is called as scanning.</p>
 
 ##### NOTE :
-</font>
-<ul type=disc>
+
+<ul type=disc style="text-align: justify;">
 <li>When the PLC is switched into the program mode, all outputs from the PLC are forced OFF regardless of their rung logic status, and the ladder I/O scan sequence is halted.</li>
 <li><b>Run mode</b> is used to execute the user program. Input devices are monitored and output devices are energized accordingly.</li>
 <li><b>Test mode</b> is used to operate or monitor the user program without energizing any outputs.</li>
 <li><b>Remote mode</b> allows the PLC to be remotely changed between program and run mode by a personal computer connected to the PLC processor.</li>
 </ul>
-<br>
+
 
 ### INTRODUCTION TO DIGITAL PLC INTERFACE :
 
@@ -288,12 +288,11 @@ I: 3 .1 / 1 is the input module in slot 3, bit or screw terminal 17. <br>
 I: 3 .1 / 2 is the input module in slot 3, bit or screw terminal 18.</p>
 
 #### Fixed I/O addressing :
-<p style="text-align: justify;">In fixed PLC manufactured by various companies, the CPU is residing in slot zero, also all I/O screw terminals must also be in slot zero.<br><br>
-The addressing for a fixed PLC is as follows: </p>
-<p style="text-align: justify;">
-    &nbsp;  &nbsp; &nbsp;I: 0 / 3 for input screw terminal 3.<br>
-    &nbsp;  &nbsp; &nbsp;I: 0 / 8 for input screw terminal 8.<br>
-    &nbsp;  &nbsp; &nbsp;O: 0 / 7 for output screw terminal 7.<br>
-   &nbsp;  &nbsp; &nbsp;O: 0 / 0 for output screw terminal 0.<br>
+<p style="text-align: justify;">In fixed PLC manufactured by various companies, the CPU is residing in slot zero, also all I/O screw terminals must also be in slot zero.</p>
+<p style="text-align: justify;">The addressing for a fixed PLC is as follows:
+
+- I: 0 / 3 for input screw terminal 3.<br>
+- I: 0 / 8 for input screw terminal 8.<br>
+- O: 0 / 7 for output screw terminal 7.<br>
+- O: 0 / 0 for output screw terminal 0.
 </p>
-	</p>
