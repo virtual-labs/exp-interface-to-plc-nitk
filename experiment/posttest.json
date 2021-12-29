@@ -2,12 +2,12 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "<img src=\"images/SE/1.gif\"\height=\"450\" width=\"600\"/>",
+      "question": "<img src='images/SE/1.gif' height='450' width='600' />",
       "answers": {
-        "a": "<img src=\"images/SE/1a.gif\"\height=\"100\" width=\"500\"/>",
-        "b": "<img src=\"images/SE/1b.gif\"\height=\"100\" width=\"500\"/>",
-        "c": "<img src=\"images/SE/1c.gif\"\height=\"100\" width=\"500\"/>",
-        "d": "<img src=\"images/SE/1d.gif\"\height=\"100\" width=\"500\"/>"
+        "a": "<img src='images/SE/1a.gif' height='100' width='500' />",
+        "b": "<img src='images/SE/1b.gif' height='100' width='500' />",
+        "c": "<img src='images/SE/1c.gif' height='100' width='500' />",
+        "d": "<img src='images/SE/1d.gif' height='100' width='500' />"
       },
       "explanations": {
         "a": "",
@@ -19,12 +19,12 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/SE/2.gif\"\height=\"450\" width=\"600\"/>",
+      "question": "<img src='images/SE/2.gif' height='450' width='600' />",
       "answers": {
-        "a": "<img src=\"images/SE/2a.gif\"\height=\"100\" width=\"500\"/>",
-        "b": "<img src=\"images/SE/2b.gif\"\height=\"100\" width=\"500\"/>",
-        "c": "<img src=\"images/SE/2c.gif\"\height=\"100\" width=\"500\"/>",
-        "d": "<img src=\"images/SE/2d.gif\"\height=\"100\" width=\"500\"/>"
+        "a": "<img src='images/SE/2a.gif' height='100' width='500' />",
+        "b": "<img src='images/SE/2b.gif' height='100' width='500' />",
+        "c": "<img src='images/SE/2c.gif' height='100' width='500' />",
+        "d": "<img src='images/SE/2d.gif' height='100' width='500' />"
       },
       "explanations": {
         "a": "",
@@ -36,12 +36,12 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/SE/3.gif\"\height=\"450\" width=\"600\"/>",
+      "question": "<img src='images/SE/3.gif' height='450' width='600' />",
       "answers": {
-        "a": "<img src=\"images/SE/3a.gif\"\height=\"100\" width=\"500\"/>",
-        "b": "<img src=\"images/SE/3b.gif\"\height=\"100\" width=\"500\"/>",
-        "c": "<img src=\"images/SE/3c.gif\"\height=\"100\" width=\"500\"/>",
-        "d": "<img src=\"images/SE/3d.gif\"\height=\"100\" width=\"500\"/>"
+        "a": "<img src='images/SE/3a.gif' height='100' width='500' />",
+        "b": "<img src='images/SE/3b.gif' height='100' width='500' />",
+        "c": "<img src='images/SE/3c.gif' height='100' width='500' />",
+        "d": "<img src='images/SE/3d.gif' height='100' width='500' />"
       },
       "explanations": {
         "a": "",
@@ -53,12 +53,12 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/SE/4.gif\"\height=\"450\" width=\"600\"/>",
+      "question": "<img src='images/SE/4.gif' height='450' width='600' />",
       "answers": {
-        "a": "<img src=\"images/SE/4a.gif\"\height=\"100\" width=\"500\"/>",
-        "b": "<img src=\"images/SE/4b.gif\"\height=\"100\" width=\"500\"/>",
-        "c": "<img src=\"images/SE/4c.gif\"\height=\"100\" width=\"500\"/>",
-        "d": "<img src=\"images/SE/4d.gif\"\height=\"100\" width=\"500\"/>"
+        "a": "<img src='images/SE/4a.gif' height='100' width='500' />",
+        "b": "<img src='images/SE/4b.gif' height='100' width='500' />",
+        "c": "<img src='images/SE/4c.gif' height='100' width='500' />",
+        "d": "<img src='images/SE/4d.gif' height='100' width='500' />"
       },
       "explanations": {
         "a": "",
@@ -70,12 +70,12 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/SE/5.gif\"\height=\"450\" width=\"600\"/>",
+      "question": "<img src='images/SE/5.gif' height='450' width='600' />",
       "answers": {
-        "a": "<img src=\"images/SE/5a.gif\"\height=\"100\" width=\"500\"/>",
-        "b": "<img src=\"images/SE/5b.gif\"\height=\"100\" width=\"500\"/>",
-        "c": "<img src=\"images/SE/5c.gif\"\height=\"100\" width=\"500\"/>",
-        "d": "<img src=\"images/SE/5d.gif\"\height=\"100\" width=\"500\"/>"
+        "a": "<img src='images/SE/5a.gif' height='100' width='500' />",
+        "b": "<img src='images/SE/5b.gif' height='100' width='500' />",
+        "c": "<img src='images/SE/5c.gif' height='100' width='500' />",
+        "d": "<img src='images/SE/5d.gif' height='100' width='500' />"
       },
       "explanations": {
         "a": "",
@@ -87,12 +87,12 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/SE/6.gif\"\height=\"450\" width=\"600\"/>",
+      "question": "<img src='images/SE/6.gif' height='450' width='600' />",
       "answers": {
-        "a": "<img src=\"images/SE/6a.gif\"\height=\"100\" width=\"500\"/>",
-        "b": "<img src=\"images/SE/6b.gif\"\height=\"100\" width=\"500\"/>",
-        "c": "<img src=\"images/SE/6c.gif\"\height=\"100\" width=\"500\"/>",
-        "d": "<img src=\"images/SE/6d.gif\"\height=\"100\" width=\"500\"/>"
+        "a": "<img src='images/SE/6a.gif' height='100' width='500' />",
+        "b": "<img src='images/SE/6b.gif' height='100' width='500' />",
+        "c": "<img src='images/SE/6c.gif' height='100' width='500' />",
+        "d": "<img src='images/SE/6d.gif' height='100' width='500' />"
       },
       "explanations": {
         "a": "",
@@ -104,12 +104,12 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/SE/7.gif\"\height=\"450\" width=\"600\"/>",
+      "question": "<img src='images/SE/7.gif' height='450' width='600' />",
       "answers": {
-        "a": "<img src=\"images/SE/7a.gif\"\height=\"100\" width=\"500\"/>",
-        "b": "<img src=\"images/SE/7b.gif\"\height=\"100\" width=\"500\"/>",
-        "c": "<img src=\"images/SE/7c.gif\"\height=\"100\" width=\"500\"/>",
-        "d": "<img src=\"images/SE/7d.gif\"\height=\"100\" width=\"500\"/>"
+        "a": "<img src='images/SE/7a.gif' height='100' width='500' />",
+        "b": "<img src='images/SE/7b.gif' height='100' width='500' />",
+        "c": "<img src='images/SE/7c.gif' height='100' width='500' />",
+        "d": "<img src='images/SE/7d.gif' height='100' width='500' />"
       },
       "explanations": {
         "a": "",
@@ -121,12 +121,12 @@
       "difficulty": ""
     },
     {
-      "question": "<img src=\"images/SE/8.gif\"\height=\"450\" width=\"600\"/>",
+      "question": "<img src='images/SE/8.gif' height='450' width='600' />",
       "answers": {
-        "a": "<img src=\"images/SE/8a.gif\"\height=\"100\" width=\"500\"/>",
-        "b": "<img src=\"images/SE/8b.gif\"\height=\"100\" width=\"500\"/>",
-        "c": "<img src=\"images/SE/8c.gif\"\height=\"100\" width=\"500\"/>",
-        "d": "<img src=\"images/SE/8d.gif\"\height=\"100\" width=\"500\"/>"
+        "a": "<img src='images/SE/8a.gif' height='100' width='500' />",
+        "b": "<img src='images/SE/8b.gif' height='100' width='500' />",
+        "c": "<img src='images/SE/8c.gif' height='100' width='500' />",
+        "d": "<img src='images/SE/8d.gif' height='100' width='500' />"
       },
       "explanations": {
         "a": "",
