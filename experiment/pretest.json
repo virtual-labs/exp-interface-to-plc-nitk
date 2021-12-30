@@ -206,7 +206,7 @@
       "difficulty": ""
     },
     {
-      "question": "What is the address of screw terminal 2 on an 8-point input module in slot 3?<br><img src='images/q4.gif' height='300' width='450'  /> "",
+      "question": "What is the address of screw terminal 2 on an 8-point input module in slot 3?<br><img src='images/q4.gif' height='300' width='450' />",
       "answers": {
         "a": "I: 3.0/2",
         "b": "I: 2.0/3",
@@ -274,7 +274,7 @@
       "difficulty": ""
     },
     {
-      "question": "What is the address of screw terminal 3 on an 8-point output module in slot 4?<br><img src='images/q5.gif' height='300' width='450'  />",
+      "question": "What is the address of screw terminal 3 on an 8-point output module in slot 4?<br><img src='images/q5.gif' height='300' width='450' />",
       "answers": {
         "a": "O: 3.1/4",
         "b": "O: 4.0/3",
@@ -359,7 +359,7 @@
       "difficulty": ""
     },
      {
-        "question": "In a fixed PLC, with 16 inputs. What is the address for the input screw terminal 6?<br><img src='images/q7.gif' height='250' width='500'  />",
+        "question": "In a fixed PLC, with 16 inputs. What is the address for the input screw terminal 6?<br><img src='images/q7.gif' height='250' width='500' />",
         "answers": {
           "a": "I: 0/6",
           "b": "I: 0.0/6",
