@@ -1,0 +1,713 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'NITK',
+        'phase': 'Testing',
+        'expName': 'INTRODUCTION TO PLC AND INTRODUCTION TO DIGITAL I/O INTERFACE TO PLC',
+        'expShortName': 'interface-to-plc'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="interface-to-plc">
+    	<meta name="developer-institute" content="NITK">
+    	<meta name="learning-unit" content="INTRODUCTION TO PLC AND INTRODUCTION TO DIGITAL I/O INTERFACE TO PLC">
+    	<meta name="task-name" content="Theory">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/virtual-labs/virtual-style@0.0.6-b/css/style.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+  </head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center">
+            <ul class="navbar-nav ml-auto text-center d-flex flex-md-row">
+              <li class="nav-item px-2 m-1">
+                <a href="https://vlab.co.in">HOME</a>
+              </li>
+              <li class="nav-item px-2 m-1">
+                <a href="https://vlab.co.in/participating-institutes">PARTNERS</a>
+              </li>
+              <li class="nav-item px-2 m-1">
+                <a href="https://vlab.co.in/contact-us">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+		  <div class="row py-4 px-4 breadcrumbs">
+		  	<div class="title is-4 tools">Tools</div>
+		  	<span class="mx-2">
+		  		<i aria-hidden="true" class="fa fa-angle-right"></i>
+		  	</span>
+		  	<a href="performance-report.html" target="_blank">
+		  		<button class="v-button">Performance Tool</button>
+		  	</a>
+		  </div>
+	  </div>
+          <div class="flex-column">
+            <div id="plugin-bug-report"></div>
+            <div id="plugin-rating"></div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2  current-item ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2 ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Self Evaluation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="assignment.html" class="p-2 ">
+                                      Assignment
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2 ">
+                                      Quiz
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="videos.html" class="p-2 ">
+                                      Videos
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2  current-item ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2 ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Self Evaluation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="assignment.html" class="p-2 ">
+                        Assignment
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2 ">
+                        Quiz
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="videos.html" class="p-2 ">
+                        Videos
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="introduction-to-plc-and-introduction-to-digital-io-interface-to-plc">Introduction to PLC and Introduction to digital I/O interface to PLC</h2>
+          
+            </div>
+              <h3 id="introduction">INTRODUCTION<br></h3>
+          <h3 id="programmable-logic-controller-">PROGRAMMABLE LOGIC CONTROLLER :</h3>
+          <p style="text-align: justify;">A programmable logic controller (PLC) is a device which is used to provide control for an automated process.</p>
+          
+          <h4 id="why-plcs-are-preferred">Why PLC's are preferred?</h4>
+          <p style="text-align: justify;">Using PLC's to achieve automation has many advantages like:
+          </p><ol type="1">
+          <li>Consistency in manufacturing can be easily achieved.</li>
+          <li>Complete control of the manufacturing process can be achieved.</li>
+          <li> Accuracy and quality can be improved.</li>
+          <li>Productivity can be improved.</li>
+          <li> Makes it easy to work in difficult or hazardous environment.</li>
+          </ol>
+          <p></p>
+          
+          <h4 id="basic-block-diagram-">Basic block diagram :</h4>
+          <center>
+          <img src="images/1.gif" height="350" width="450">
+          
+          </center>
+          <br>
+          <p style="text-align: justify;">A PLC has following sections and each section has unique job to perform.
+          </p><ol type="1">
+          <li><b><u>The sensing section :</u></b><br>
+          <p style="text-align: justify;">This section consists of limit switches, photoelectric sensors, push buttons etc. These incoming  hardware devices provides input signal to the PLC. These devices are also called as field input devices. The term “field input " is used because this device provides incoming signals that are  tangible items that you physically connect to PLC.</p>
+          </li>
+          
+          <li><b><u>Input section :</u></b><br>
+          <p style="text-align: justify;">This section is majorly divided into 2 parts:
+          </p><ul type="disc" style="text-align: justify;">
+          <li>First, the physical screw terminals, where incoming signal (i.e. input), from the field input devices (e.g. limit switch) are connected to the PLC.</li>
+          <li>The second portion of them input section is the PLC's internal conversion electronics. This section converts and isolates the high-voltage input level from field input devices. High-voltage    signals from field input devices are converted to +5 volts direct current (VDC) for a valid ON input signal, and a 0 VDC for a valid OFF input signal. Incoming signal conversion and isolation is necessary because microprocessor components operate on +5 VDC, whereas an input signal may be of 24 VDC, 120 volts alternating current (VAC), or 220 VDC. If 120 VAC signal is inputted, for example, into 5 VDC, circuit will quickly destroy your PLC.</li>
+          </ul>
+          <p></p>
+          </li>
+          
+          <li><b><u>Controller :</u></b><br>
+          <p style="text-align: justify;">The controller is also known as central processing unit (CPU), or simply as the processor. Central processing unit controls or supervises the entire process. The central processing unit solves the user program and apparently updates the status of the outputs.</p>
+          </li>
+          
+          <li><b><u>Programmer :</u></b><br>
+          <p style="text-align: justify;">The programmer is a device used by the programmer or operator to enter or edit program instructions or data. The programmer can be handheld unit, a personal computer, or an industrial computer programming terminal.</p>
+          </li>
+          
+          <li><b><u>Output section :</u></b><br>
+          <p style="text-align: justify;">The ON or OFF status of the inputs are read and the information is used to solve the user ladder program and the updated signals is sent to the output section. The output section is simply a series of switches, one for each output point, that are controlled by CPU and are used to turn output field devices ON or OFF.</p>
+          </li>
+          
+          <li><b><u>Field hardware devices :</u></b><br>
+          <p style="text-align: justify;">The devices that are controlled by the PLC's output section screw terminals are the field hardware devices.</p>
+          </li>
+          </ol>
+          
+          
+          <h4 id="fixed-and-modular-plc-hardware-">Fixed and modular PLC hardware :</h4>
+          <p style="text-align: justify;">There are two types of physical configurations, fixed and modular. In a fixed PLC, all of its components like, the input section, power supply, CPU and associated memory and output section - is built into one self - contained unit. All the input and output screw terminals are built into the PLC package and are fixed, which cannot be moved i.e. not removable. This type of PLC is also called as a packaged controller.</p>
+          
+          <p style="text-align: justify;">The modular PLC comes as separate pieces. All the parts of modular PLC are purchased separately i.e. piece by piece. It’s like customizing , we may have  2  or  3  power  supplies  to  choose  from  ,  a  handful  of  different processors(CPU's) , many separate input modules , many separate output modules  and  a  selection  of  assemblies  ,  called  racks  ,  chassis  ,  or baseplates to hold the pieces together.</p>
+          
+          <h4 id="how-does-a-plc-work">How does a PLC work?</h4>
+          <p style="text-align: justify;">Microprocessor is the heart of any computer, it is also called as processor, or CPU. The central processing unit supervises system control through the user program. After  reading the input signal, the CPU follows the instructions,  that  a  programmer  or  operator  has  stored  in  the  PLC's memory. Depending upon the result of the solved program, the field control devices or outputs are turned ON or OFF. When the PLC is running and following the programmer's instructions, it is called as solving the program.</p>
+          
+          <h4 id="how-do-plcs-know-what-they-are-supposed-to-do">How do PLC's know what they are supposed to do?</h4>
+          <p style="text-align: justify;">A PLC just follows the instructions stored in memory. Each instruction given by the programmer is placed in PLC memory in ascending order. A list of instruction is called as the user ladder program.</p>
+          
+          <h4 id="how-does-a-plc-work-1">How does a PLC work?</h4>
+          <p style="text-align: justify;">The instructions which we want our PLC to carry out can be transferred to the controller memory using either handheld programmer or a personal computer.</p>
+          
+          <p style="text-align: justify;">The first step is to develop the user ladder program. Once the user ladder program  is  verified  for  correctness,  the  next  step  is  to  download  the program into the processor's memory. The process of transferring the user defined PLC program from personal computer's memory into PLC memory is called  as downloading the program. But before downloading the user program, the processor must be in  program mode. Now, if all the inputs and outputs signals are wired to the correct screw terminals, the processor can be put in run mode. In run mode, the program will continuously run and solve the programmed instructions. The process of solving the programmed  instruction  is  sometime  called  as  solving  the  logic.  This constant running of the program in a PLC is called as scanning.</p>
+          
+          <h5 id="note-">NOTE :</h5>
+          <ul type="disc" style="text-align: justify;">
+          <li>When the PLC is switched into the program mode, all outputs from the PLC are forced OFF regardless of their rung logic status, and the ladder I/O scan sequence is halted.</li>
+          <li><b>Run mode</b> is used to execute the user program. Input devices are monitored and output devices are energized accordingly.</li>
+          <li><b>Test mode</b> is used to operate or monitor the user program without energizing any outputs.</li>
+          <li><b>Remote mode</b> allows the PLC to be remotely changed between program and run mode by a personal computer connected to the PLC processor.</li>
+          </ul>
+          
+          
+          <h3 id="introduction-to-digital-plc-interface-">INTRODUCTION TO DIGITAL PLC INTERFACE :</h3>
+          <h4 id="introduction-">Introduction :</h4>
+          <center>
+          <img src="images/1a.gif" height="500" width="600">
+          
+          </center>
+          
+          <p style="text-align: justify;">There are 16 point, 8 point and 32 point input module. As, an example, Fig (a), let us take a standard input module with 16 points.</p>
+          
+          <p style="text-align: justify;">Each 16 point input module corresponds to one 16-bit word of data. Also, each input point corresponds to 1 bit in the 16- bit word associated with the input module.</p>
+          
+          <p style="text-align: justify;">Note:- A bit position cannot be empty, there is either 1 or 0 value in each position all the times.</p>
+          
+          <center>
+          <img src="images/b.gif" height="400" width="600">
+          
+          </center>
+          <p style="text-align: justify;">In the above figure, input three is a closed switch, which is going into the input screw terminal 3. As  we can see the switch is closed, an ON (1) signal is sent to the input word, in bit position 3. Also from the figure, we can see input 4 is an open switch going into the input screw terminal 4. Since the switch is open, an OFF (0) signal is transferred to the input word, in bit position 4.</p>
+          
+          <center>
+          <img src="images/c.gif" height="500" width="600">
+          
+          </center>
+          
+          <p style="text-align: justify;">Even eight - point input modules are also available. In these modules, only the lower eight bits of the input word are used.</p>
+          
+          <h4 id="input-status-file">Input status file:</h4>
+          <p style="text-align: justify;">Input status file is a cluster of words in memory, that are organized to store input data. The data which is stored in the input status file is used by the CPU when the program is solved. Each I/O module in a chassis is assigned a specific word in the input status file. Each screw terminal in an input module corresponds to one memory location in the input status file, which can be used to store ON (1) or OFF (0) status of the connected field input devices.</p>
+          
+          <center>
+          <img src="images/d.gif" height="500" width="600">
+          
+          </center>
+          
+          <p style="text-align: justify;">Above figure shows a 4-slot modular PLC, which contains a power supply, CPU module and 3 input modules. Here each slot in the chassis has a corresponding number. The CPU is slot zero, while input modules are located in slots one through four. The slot number corresponding to a particular input module identifies in which 16-bit word the input status file will store that particular input module's ON or OFF input data. In order to simplify tracking modules in the input status file, the file word assigned to the module is the same as the slot in which the module resides in the modular PLC. As a result, since the CPU resides in slot zero on a SLC 500 modular PLC and there are no input words assigned to the CPU, there will be no word zero in the input status file.</p>
+          
+          <h4 id="the-output-status-file-">The output status file :</h4>
+          <p style="text-align: justify;">The output status file has a function which is similar to input status file with the exception that the output status file stores the ON or OFF status of each output. When the user program is solved, the resulting ON or OFF state of each output point (and its associated field device) is stored in the output status file. Each 16-point output module has one 16-bit word holding the ON or OFF status of each of the module's 16-output screw terminals. This status data is stored is stored in the output status file waiting to be sent to the output module's switching circuitry.</p>
+          
+          <center>
+          <img src="images/e.gif" height="500" width="600">
+          
+          </center>
+          
+          <p style="text-align: justify;">The above figure represents a four -slot modular PLC, which contains a power supply, a CPU module, and three output modules. Here also each slot of the chassis has a corresponding number. The CPU is in slot zero, while output modules reside in slots one through four. The slot number corresponding to a particular output module identifies in which 16-bit word the output status file will store that particular module's ON or OFF output data.</p>
+          <p style="text-align: justify;">After solving user ladder program, the CPU sends each 16-bit output status file word to its associated output module by way of backplane. Each output module takes the low-voltage ON or OFF signal, which is represented as 0 or  1  bit  in  the  16-bit  word,  isolates  it,  and  turns  on  or  turns  off  the associated output's switching device. Each output      module    has    one switching device for each output point. These switching devices may be small mechanical relays, as shown in fig (f), or solid state devices. The output status file bits electrical signal is sent from the status file to power the relay coil output three's relay output point.</p>
+          
+          <center>
+          <img src="images/f.gif" height="500" width="600">
+          
+          </center>
+          <p style="text-align: justify;">Fig (d)  and  fig  (e)  illustrated  PLC's  with  either  all  input  or  all  output modules. These examples were created to help you understand how status file words correlate with input and output modules. Actual applications will have a mix of input and output modules in the same PLC chassis. One of the major advantages of a modular PLC is the ability to place input and output modules in the selected chassis in the input or output designation required for a specific application.</p>
+          
+          <p style="text-align: justify;">For example, let us take a seven slot chassis. Here, CPU is placed in slot zero and then, you are free to place any mix of input and output modules you need in the remaining six slots.</p>
+          
+          <center>
+          <img src="images/g.gif" height="500" width="600">
+          
+          </center>
+          
+          <p style="text-align: justify;">Fig (g) shows a seven - slot chassis with input modules in slot 1,3,4 and 6 and , output modules in  slot 2 and 5 .Each input modules will have an associated word with the same input data file number as the slot in which resides . In a similar manner, each output module will have an associated word in the output status file with the same data file word number as the slot in which it resides. Theses status files are two separate data files. Although they are stored in PLC's memory, they are located in predefined, separate areas used strictly for the storage of either input or output status data.</p>
+          <p style="text-align: justify;">Notice the gaps in both the input status file's input and output status word sequence. There are no input status words reserved for non - existent slots 2 or 5, not output status words 1, 3,4 or 6.</p>
+          
+          <h4 id="sixteen-point-io-modules-with-decimal-addressing-">Sixteen point I/O modules with decimal addressing :</h4>
+          <p style="text-align: justify;">A typical  PLC  addressing  is  dependent  on  the  module  type  and  slot position in which the  module resides in the chassis.</p>
+          <p style="text-align: justify;">In order to explain, consider fig (g).  The component of each screw terminal’s address consists of the slot number, the screw terminal number, and a designation as to whether the I/O point is an input or output.</p>
+          <p style="text-align: justify;">If a specific screw terminal is input, we begin its address with an I. If a particular screw terminal is an output, we begin its address with an O. The next thing we need to identify is what slot the module is in. The input module in slot one will be identified as I:1 , the output module in slot two is O:2 , the input module in slot three is identified as I:3.</p>
+          
+          
+          <table cellspacing="30">
+          <tbody><tr>
+          <td>CPU is always slot 0</td>
+          <td> No address</td>
+          </tr>
+          
+          <tr>
+          <td>Input module in slot 1</td>
+          <td>I: 1</td>
+          </tr>
+          
+          <tr>
+          <td>Output module in slot 2</td>
+          <td>O: 2</td>
+          </tr>
+          
+          <tr>
+          <td>Input module in slot 3</td>
+          <td>I: 3</td>
+          </tr>
+          
+          <tr>
+          <td>Input module in slot 4</td>
+          <td>I: 4</td>
+          </tr>
+          
+          <tr>
+          <td>Output module in slot 5</td>
+          <td>O: 5</td>
+          </tr>
+          
+          <tr>
+          <td>Input module in slot 6</td>
+          <td>I: 6</td>
+          </tr>
+          </tbody></table>
+          
+          <p style="text-align: justify;">Each screw terminal of a 16-point module is identified as 0 through 15, decimal.<br>
+          
+          </p><p>Table 1: Addressing structure format</p><p></p>
+          <center>
+          <img src="images/h.gif" height="300" width="500">
+          
+          </center>
+          <p style="text-align: justify;">Address format consists of three parts, see figure below. [Fig (i)]</p>
+          
+          <center>
+          <img src="images/i.gif" height="400" width="600">
+          
+          </center>
+          
+          <p style="text-align: justify;">Part 1: I for input, or O for output, and a colon to separate the module type from the slot.<br>
+          Part 2: The module slot number.<br>
+          Part 3: The dot signifies a word follows. This is the word number. If using an 8 or 16 point module, only one word is necessary. This is the first word 0. When an 8 or 16 point module, the word number is optional.<br>
+          Part 4: The slash identifies that a bit follows. This is the bit or screw terminal number.<br>
+          
+          </p><p><em>Address format = Input or Output: slot / Screw terminal</em></p>
+          <p></p>
+          
+          <h4 id="io-interaction-with-the-input-and-output-status-files-">I/O interaction with the input and output status files :</h4>
+          <p style="text-align: justify;">Every PLC manufacturer has its own addressing rules. Let us take a typical 16-bit PLC for our explanation.</p>
+          
+          <h5 id="modular-io-addressing-and-input-and-output-status-file-">Modular I/O addressing and input and output status file :</h5>
+          <p style="text-align: justify;">Here in our example, PLC is a 16-bit PLC, therefore data is formatted into a 16-bit words. If we use a 16 - point input module, one word of memory contains enough bits for each input screw terminal. However, if we use a 32-point input module, a 16- bit word only contains enough bits for half of the input points. As a result, two words will be necessary to represent 32 input points.</p>
+          <p style="text-align: justify;">For our explanation, referring to fig(g), let’s assume our modular PLC has the following input and output modules.</p>
+          
+          <table cellspacing="20">
+          <tbody><tr>
+          <td>Slot 1</td>
+          <td>8 - point discrete input module. </td>
+          </tr>
+          
+          <tr>
+          <td>Slot 2</td>
+          <td>16 - point discrete output module. </td>
+          </tr>
+          
+          <tr>
+          <td>Slot 3</td>
+          <td>32 - point discrete input modules. </td>
+          </tr>
+          
+          <tr>
+          <td>Slot 4</td>
+          <td>16 - point discrete input module.</td>
+          </tr>
+          
+          <tr>
+          <td>Slot 5</td>
+          <td>8 - point discrete output module.  </td>
+          </tr>
+          
+          <tr>
+          <td>Slot 6</td>
+          <td>16 - point discrete input module. </td>
+          </tr>
+          
+          </tbody></table>
+          
+          <p style="text-align: justify;">Table 2: Example of input status file</p>
+          
+          <center>
+          <img src="images/j.gif" height="200" width="500">
+          
+          </center>
+          
+          <p style="text-align: justify;">Table 3: Example of output status file</p>
+          
+          <center>
+          <img src="images/k.gif" height="150" width="500">
+          
+          </center>
+          <br>
+          
+          <h5 id="few-observations-">Few observations :</h5>
+          <p style="text-align: justify;">In slot 3, 2 input words are assigned to the 32 - point input module. The first word is I: 3.0 and I: 3.1 is the second word. The lower 16 input addresses, screw terminals 0 through 15, are in the first word. These addresses are I:3.0 / bits 0 through 15. <br>
+          For example: I: 3. 0 / 0 is input module in slot 3, bit or screw terminal 0. <br>
+            &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  I: 3. 0 / 5 is input module in slot 3, bit or screw terminal 5.<br>
+          
+          </p><p>The addresses for the upper 16 inputs on 32-point module are as follows:<br>
+          I: 3. 1 / 0 is input module in slot 3, bit or screw terminal 16. Since the lower
+          16 - bit word contains input points 0 through 15, the second word contains screw terminals or input points 16 through 31.<br></p>
+          <p>Remember, the second word is I: 3. 1, so the first bit is I: 3 .1 / 0, or input point 16.<br></p>
+          <p>I: 3 .1 / 1 is the input module in slot 3, bit or screw terminal 17. <br>
+          I: 3 .1 / 2 is the input module in slot 3, bit or screw terminal 18.</p><p></p>
+          <h4 id="fixed-io-addressing-">Fixed I/O addressing :</h4>
+          <p style="text-align: justify;">In fixed PLC manufactured by various companies, the CPU is residing in slot zero, also all I/O screw terminals must also be in slot zero.</p>
+          <p style="text-align: justify;">The addressing for a fixed PLC is as follows:
+          
+          </p><ul>
+          <li>I: 0 / 3 for input screw terminal 3.<br></li>
+          <li>I: 0 / 8 for input screw terminal 8.<br></li>
+          <li>O: 0 / 7 for output screw terminal 7.<br></li>
+          <li>O: 0 / 0 for output screw terminal 0.<p></p>
+          </li>
+          </ul>
+          
+          </div>
+        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fa fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fa fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fa fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fa fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+
+      <script src="./assets/js/toggleSidebar.js"></script>
+      
+  
+
+<script type="module" src="https://vjspranav.github.io/vleads-bug-report/client/app.js"></script></body></html>

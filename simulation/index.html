@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SOLVE</title>
+<link rel="stylesheet" href="css/plc.css" />
+<script type="text/javascript" src="js/plc.js"></script>
+<script>
+var simsubscreennum=0;
+var temp=0;
+</script>
+</head>
+
+<body style="margin:0; font-family:verdana; color:#ffffff;">
+<div id="simscreen">
+<div id="title"><h4>INTRODUCTION TO PROGRAMMABLE LOGIC CONTROLLER AND INTRODUCTION TO DIGITAL I/O INTERFACE TO PLC </h3></div>
+
+<div class="simsubscreen" id="canvas0" >
+	<h4 class="incanvas">Objective:</h4>
+	<p class="incanvas" style="font-size:14px;">To understand the basic working of Programmable Logic Controller (PLC) by taking a simple program.</p></br>
+	<center><img style="width:600px; height:350px;" src="images/plc1.png" /></center>
+	<center><h5>Block diagram of Programmable Logic Controller</h5></center>
+	&nbsp;&nbsp;&nbsp;<span class="tooltip" style="border-bottom:2px dotted; color:red; cursor:pointer; position:absolute; top:450px;"><strong>Description</strong>
+		<span  class="tooltiptext" style="font-size:14px; text-align:justify;">From the block diagram, we can see there are 2 switches connected to input side and a lamp at the output side.</span>
+	</span>
+</div>
+
+<div class="simsubscreen" id="canvas1" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;1&nbsp;</span>
+	<p class="steptext">&nbsp;Create a program (ladder diagram) to turn on the lamp only when both the switches are closed (And operation).</p>
+	<img style="position:absolute; left:45px; top:80px;" src="images/lad.png" />
+	<p style="position:absolute; left:84px; top:85px; font-weight:bold;">I<sub>1</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I<sub>2</sub> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O<sub>1</sub></p>
+	<img id="1-1" style="position:absolute; left:290px; top:125px; visibility:hidden;" src="images/arrow2.png" />
+	<p id="1-2" style="position:absolute; left:345px; top:115px; color:goldenrod; visibility:hidden;">This ladder diagram represents an And operation</p>
+	<img id="1-3" style="position:absolute; left:475px; top:185px; transform:rotate(90deg); visibility:hidden;" src="images/arrow2.png" />
+	<table id="1-4" style="position:absolute; left:350px; top:255px; color:lime; font-weight:bold; text-align:center; width:300px; visibility:hidden;"  border=1>
+		<tr>
+			<td colspan=4>Truth table</td>
+		</tr>
+		<tr>
+			<td>I<sub>1</sub></td>
+			<td>I<sub>2</sub></td>
+			<td>O<sub>1</sub></td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>0</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>0</td>
+			<td>1</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>1</td>
+			<td>1</td>
+		</tr>
+	</table>
+</div>
+
+<div class="simsubscreen" id="canvas2" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;2&nbsp;</span>
+	<p class="steptext">&nbsp;Download the program (ladder diagram) developed into PLC's memory using PROGRAMMER.</p>	
+	<div id="info" style="position:absolute; left:100px; top:100px; text-align:justify; padding:20px; border:1px solid grey; background-color:white; border-radius:7.5px; visibility:hidden; width:500px; box-shadow:2px 3px 4px 3px lightgrey;">
+		<ul style="color:black; font-size:14px; padding:5px; list-style-type:square;" >
+			<li>Handheld programmer, PC or industrial computer programming terminal can be used as the PROGRAMMER</li></br>
+			<li>The processor must be switched to <span style="color:red; font-weight:bold;">program mode</span> before downloading the program into PLC's memory</li></br>
+			<li>In program mode, all outputs from the PLC are forced OFF regardless of their rung logic status, and the ladder I/O scan sequence is halted</li>
+		</ul>
+		<input id="bOK" type="button" style="float:right;" value="OK" />
+	</div>
+	<img id="2-1" style="position:absolute; left:40px; top:150px; width:550px; height:350px; visibility:hidden;" src="images/plc1.png" />
+	<img id="2-2"style="position:absolute; left:330px; top:50px; visibility:hidden;" src="images/pc.png" />
+	<p id="2-3" style="position: absolute; left:355px; top: 395px; color: yellow; font-size:11px; visibility: visible; visibility:hidden;">Program mode</p>
+	<p id="2-4" style="position:absolute; left:400px; top: 160px; color:lime; font-size:12px; visibility:hidden;">Downloading...</p>
+	<p id="2-5" style="position:absolute; left:645px; top: 295px; color:#FF1E52; font-size:12px; visibility:hidden;">HALTED (Forced off)</p>
+	<img id="2-6" style="position:absolute; left:515px; top:150px; visibility:hidden;" src="images/circle1.png" />
+	<div id="aline1" style="visibility:hidden; position:absolute; left:385px; top:165px; height: 75px; border-left: 3px dotted lime;"></div>
+	<div id="aleft1" style="visibility:hidden; position:absolute; left:390px; top:220px; height:25px; border-left: 3px dotted lime; transform:rotate(-150deg);"></div>
+	<div id="aright1" style="visibility:hidden; position:absolute; left:380px; top:220px;  height:25px; border-left: 3px dotted lime; transform:rotate(-35deg);"></div>
+	
+	<div id="aline2" style="visibility:hidden; position:absolute; left:606px; top:313px; border:1px solid goldenrod; width:35px;"></div>
+	<div id="aleft2" style="visibility:hidden; position:absolute; left:635px; top:310px; width:7px; border:1px solid goldenrod; transform:rotate(-150deg);"></div>
+	<div id="aright2" style="visibility:hidden; position:absolute; left: 635px; top: 316px; width: 7px; border: 1px solid goldenrod; transform:rotate(-35deg);"></div>
+</div>
+
+<div class="simsubscreen" id="canvas3" style="visibility:hidden;">
+	<strong class="incanvas">STEP</strong>
+	<span class="circlebg">&nbsp;3&nbsp;</span>
+	<p class="steptext">&nbsp;After downloading the program, put the PLC into RUN mode to solve the programmed &nbsp;&nbsp;&nbsp;instructions.</p>	
+	<div id="info2" style="position:absolute; left:100px; top:100px; text-align:justify; padding:20px; border:1px solid grey; background-color:white; border-radius:7.5px; visibility:hidden; width:500px; box-shadow:2px 3px 4px 3px lightgrey;">
+		<ul style="color:black; font-size:14px; padding:5px; list-style-type:square;" >
+			<li>In <span style="color:red; font-weight:bold;">RUN mode</span>, the program will continuously run and solve the programmed instructions</li></br>
+			<li>The process of solving the programmed instruction is sometimes called as <span style="color:red; font-weight:bold;"><i>solving the logic</i></span>. This constant running of the program in a PLC is called <span style="color:red; font-weight:bold;"><i>scanning</i></span></li></br>
+			<li>Or, in other words, in RUN mode, the user program is executed. Input devices are monitored and output devices are energized accordingly</li>
+		</ul>
+		<input id="bOK2" type="button" style="float:right;" value="OK" />
+	</div>
+	<img id="3-1" style="position:absolute; left:40px; top:150px; visibility:hidden;" src="images/plc2.png" />
+	
+	<p id="3-2" style="position: absolute; left:440px; top: 402.5px; color: yellow; font-size:12px; font-weight:bold; visibility:hidden;">RUN mode...</p>
+	
+	<p id="3-31" style="position: absolute; left:298px; top:210px; font-size:12px; font-weight:bold; visibility:hidden;">0</p>
+	<p id="3-32" style="position: absolute;  left:342px; top:210px; font-size:12px; font-weight:bold; visibility:hidden;">0</p>
+	<p id="3-33" style="position: absolute; left:390px; top:210px; font-size:12px;  font-weight:bold; visibility:hidden;">0</p>
+	
+	<p id="3-41" style="position: absolute; left:295px; top:256px; font-size:12px; font-weight:bold; visibility:hidden;">OFF</p>
+	<p id="3-42" style="position: absolute; left:339px; top:256px; font-size:12px; font-weight:bold; visibility:hidden;">OFF</p>
+	<p id="3-43" style="position: absolute; left:386px; top:256px; font-size:12px; font-weight:bold; visibility:hidden;">OFF</p>
+	
+	<p id="3-61" style="position: absolute; left:310px; top: 325px; font-size:15px; font-weight:bold; visibility:hidden;">0</p>
+	<p id="3-62" style="position: absolute; left:330px; top: 325px; font-size:15px; font-weight:bold; visibility:hidden;">0</p>
+	<p id="3-63" style="position: absolute; left:513px; top: 325px; font-size:15px; font-weight:bold; visibility:hidden;">0</p>
+	
+	<p id="3-7" style="position: absolute; left:690px; top: 150.5px; font-size:16px; font-weight:bold; visibility:hidden;">OFF</p>
+	
+	<img id="3-8" style="position:absolute; left:25px; top:140px; visibility:hidden;" src="images/circle2.png" />
+	<img id="3-9" style="position:absolute; left:95px; top:90px; visibility:hidden;" src="images/circle3.png" />
+	
+	<img id="3-a1" style="position:absolute; left:160px; top:280px; visibility:hidden;" src="images/a1.png" />
+	<img id="3-a2" style="position:absolute; left:255px; top:290px; visibility:hidden;" src="images/a2.png" />
+	<img id="3-a3" style="position:absolute; left:425px; top:290px; visibility:hidden;" src="images/a3.png" />
+	<img id="3-a4" style="position:absolute; left:500px; top:280px; visibility:hidden;" src="images/a4.png" />
+	
+	<img id="3-s11" style="position:absolute; left:64px; top:223px; visibility:hidden;" src="images/off.png" />
+	<img id="3-s12" style="position:absolute; left:64px; top:231px; visibility:hidden;" src="images/on.png" />
+	
+	<img id="3-s21" style="position:absolute; left:63px; top:249px; visibility:hidden;" src="images/off.png" />
+	<img id="3-s22" style="position:absolute; left:63px; top:256px; visibility:hidden;" src="images/on.png" />
+	
+	<img id="3-10" style="position:absolute; left:63px; top:50px; visibility:hidden;" src="images/hp.png" />
+	
+	<img id="3-12" style="position:absolute; left:610px; top:140px; width:60px; height:65px; visibility:hidden;" src="images/lamp.png" />
+	
+	<p id="3-11" style="position:absolute; left:290px; top:30px; color:#eab2f7; font-size:16px; font-weight:bold; visibility:hidden; border-bottom-style: double;"></p>
+	
+	<img id="nextCondition" style="visibility:hidden;" src="images/Next.png" />
+	<img id="prevCondition" onclick="prevCondition()" style="visibility:hidden;" src="images/Next.png" />
+
+</div>
+
+<div id="nav">
+<img id="nextButton" onclick="navNext()" src="images/Next.png" />
+</div>
+
+
+<img class ="" id="arrow1" style="visibility:hidden;" src="images/arrow1.png"/>
+
+<div id="copyright"> &copy; 2020 - <script>document.write(new Date().getFullYear())</script> SOLVE - The Virtual Lab @ NITK Surathkal</div>
+
+</div>
+<script src="../assets/js/iframeResize.js"></script></body>
+</html>

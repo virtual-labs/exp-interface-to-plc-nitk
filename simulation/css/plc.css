@@ -1,0 +1,218 @@
+html
+{
+    -moz-user-select     : none;
+    -khtml-user-select   : none;
+    -webkit-user-select  : none;
+    -o-user-select       : none;
+    user-select          : none;
+}
+
+#simscreen
+{
+	position: relative;
+	left:0px;
+	top:0px;
+	height: 600px; 
+	width:800px;
+	border:solid 1px;
+	background-color:#000;
+}
+
+#title{
+	position:relative;
+	left: 1px;
+	top: 1px;
+	height:53px;
+	width:794px;
+	font-size: 22px;
+	text-align:center;
+	background-color: black;
+	font-family: verdana;
+	color: White;
+	text-transform: uppercase; 
+	border:2px solid #fff;
+}
+
+#title h4
+{
+	padding-top:2px;
+	margin:0px;
+}	
+
+.simsubscreen
+{
+	position:absolute;
+	left:1px;
+	top:59px;
+	height:520px;
+	width:794px;
+	border:2px solid #fff;
+}
+
+.simsubscreen2
+{
+	position:absolute;
+	left:10px;
+	top:15px;
+	height:503px;
+	width:782px;
+}
+
+.incanvas
+{
+	margin:7.5px 0 0 7.5px;
+	padding:5px;
+}
+
+#nextButton
+{
+	position:absolute;
+	left:752px;
+	top:530px;
+	cursor:pointer;
+}
+
+#nextCondition
+{
+	position:absolute;
+	left:752px;
+	top:450px;
+	cursor:pointer;
+}
+
+#prevCondition
+{
+	position:absolute;
+	left:3px;
+	top:450px;
+	cursor:pointer;
+	transform : rotate(180deg);
+}
+
+.circlebg
+{
+	border-radius:100%;
+	font-size:25px;
+	color:#000;
+	text-align:center;
+	background:#fff;
+}
+
+.steptext
+{
+	display:inline;
+	font-size:14px;
+}
+
+#copyright{
+	position: absolute;
+	left:200px;
+	top: 583px;
+	font-size:12px;
+	color:white;
+}
+
+.popup
+{
+	border-radius:5px;
+	background-color:black;
+	color:white;
+	padding:5px;
+}
+
+.tooltip
+ {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+	left:100px;
+  visibility: hidden;
+  width: 500px;
+  background-color: white;
+  color: #000;
+  border-radius: 6px;
+  padding: 10px 10px 10px 10px;
+  box-shadow:2px 3px 2px 4px grey;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 100;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+input[type=button]
+{
+	border:none;
+	border-radius:5px;
+	background-color:#000;
+	color:#fff;
+	padding:10px 15px;
+	font-weight:bold;
+	cursor:pointer;
+}
+
+@-webkit-keyframes highlightPM {
+	0% {font-weight:normal; font-size:10.5px;}
+	100%{font-weight:bold; font-size:10.5px;}
+}
+
+@keyframes highlightPM {
+	0% {font-weight:normal; font-size:10.5px;}
+	100%{font-weight:bold; font-size:10.5px;}
+}
+
+@-webkit-keyframes highlightDownloadArrow {
+	0% {border-left: 3px dotted lime;}
+	100%{border-left: 3px dotted goldenrod;}
+}
+
+@keyframes highlightDownloadArrow {
+	0% {border-left: 3px dotted lime;}
+	100%{border-left: 3px dotted goldenrod;}
+}
+
+@-webkit-keyframes highlightDownload {
+	0% {color:lime; font-weight:bold; font-size:12px;}
+	100%{color:goldenrod; font-weight:bold; font-size:13px;}
+}
+
+@keyframes highlightDownload {
+	0% {color:lime; font-weight:bold; font-size:12px;}
+	100%{color:goldenrod; font-weight:bold; font-size:13px;}
+}
+
+@-webkit-keyframes highlightRM {
+	0% {font-weight:normal; font-size:12px;}
+	100%{font-weight:bold; font-size:12px;}
+}
+
+@keyframes highlightRM {
+	0% {font-weight:normal; font-size:12px;}
+	100%{font-weight:bold; font-size:12px;}
+}
+
+@-webkit-keyframes movePonter1 {
+	from {top:50px;}
+	to {top:190px;}
+}
+
+@keyframes movePonter1 {
+	from {top:50px;}
+	to {top:190px;}
+}
+
+@-webkit-keyframes movePonter2 {
+	from {top:50px;}
+	to {top:215px;}
+}
+
+@keyframes movePonter2 {
+	from {top:50px;}
+	to {top:215px;}
+}
